@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightCaribbean.com — Premium Domain For Sale</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --teal: #0e9e82;
+            --teal-light: #1cc4a0;
+            --teal-dark: #076652;
+            --amber: #f5a623;
+            --sky: #38b2e8;
+            --deep: #0a2a3a;
+            --white: #ffffff;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100vh;
+            font-family: 'DM Sans', sans-serif;
+            background: var(--deep);
+            color: var(--white);
+            overflow-x: hidden;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 50% 110%, #0e9e8240 0%, transparent 70%),
+                radial-gradient(ellipse 60% 40% at 80% 20%, #38b2e820 0%, transparent 60%),
+                linear-gradient(180deg, #061a26 0%, #0a2a3a 50%, #072030 100%);
+        }
+
+        .wave-wrap {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            height: 160px;
+            overflow: hidden;
+        }
+
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: -50%;
+            width: 200%;
+            height: 100%;
+            border-radius: 40% 40% 0 0;
+            opacity: 0.15;
+            animation: waveMove 8s ease-in-out infinite;
+        }
+
+        .wave:nth-child(1) {
+            background: var(--teal);
+            animation-duration: 7s;
+        }
+
+        .wave:nth-child(2) {
+            background: var(--sky);
+            animation-duration: 9s;
+            animation-delay: -3s;
+            opacity: 0.1;
+        }
+
+        .wave:nth-child(3) {
+            background: var(--teal-light);
+            animation-duration: 11s;
+            animation-delay: -5s;
+            opacity: 0.07;
+        }
+
+        @keyframes waveMove {
+
+            0%,
+            100% {
+                transform: translateX(0) scaleY(1);
+            }
+
+            50% {
+                transform: translateX(5%) scaleY(1.1);
+            }
+        }
+
+        .dots {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .dot {
+            position: absolute;
+            border-radius: 50%;
+            background: var(--teal-light);
+            opacity: 0.12;
+            animation: floatDot linear infinite;
+        }
+
+        @keyframes floatDot {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 0.12;
+            }
+
+            50% {
+                opacity: 0.22;
+            }
+
+            100% {
+                transform: translateY(-60px) scale(1.1);
+                opacity: 0;
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 820px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(14, 158, 130, 0.18);
+            border: 1px solid rgba(28, 196, 160, 0.35);
+            color: var(--teal-light);
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 6px 18px;
+            border-radius: 100px;
+            margin-bottom: 2rem;
+            animation: fadeUp 0.8s ease both;
+        }
+
+        .domain-name {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 8vw, 6.5rem);
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 0.3em;
+            animation: fadeUp 0.9s ease 0.1s both;
+        }
+
+        .domain-name .bright {
+            color: var(--white);
+        }
+
+        .domain-name .caribbean {
+            color: var(--teal-light);
+        }
+
+        .domain-name .tld {
+            font-size: 0.45em;
+            color: var(--amber);
+            font-weight: 400;
+            vertical-align: super;
+        }
+
+        .tagline {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.65);
+            max-width: 520px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.7;
+            animation: fadeUp 1s ease 0.2s both;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--teal) 0%, var(--teal-light) 100%);
+            color: var(--white);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 16px 42px;
+            border-radius: 100px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: fadeUp 1s ease 0.3s both;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(14, 158, 130, 0.4);
+        }
+
+        .price-note {
+            margin-top: 1.2rem;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.4);
+            animation: fadeUp 1s ease 0.4s both;
+        }
+
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--teal-light);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 3rem;
+            color: var(--white);
+        }
+
+        .use-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .use-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 1.75rem 1.5rem;
+            transition: background 0.2s, border-color 0.2s, transform 0.2s;
+        }
+
+        .use-card:hover {
+            background: rgba(14, 158, 130, 0.1);
+            border-color: rgba(28, 196, 160, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .use-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .use-card h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--white);
+            margin-bottom: 0.4rem;
+        }
+
+        .use-card p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.45);
+            line-height: 1.6;
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem;
+            background: rgba(14, 158, 130, 0.08);
+            border: 1px solid rgba(28, 196, 160, 0.15);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--teal-light);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-cta {
+            text-align: center;
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, transparent 0%, rgba(14, 158, 130, 0.06) 100%);
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .footer-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.6rem, 4vw, 2.4rem);
+            margin-bottom: 1rem;
+        }
+
+        .footer-cta p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1rem;
+            max-width: 460px;
+            margin: 0 auto 2rem;
+            line-height: 1.7;
+        }
+
+        .godaddy-note {
+            margin-top: 1rem;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(28, 196, 160, 0.25), transparent);
+            margin: 0 2rem;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="dots" id="dots"></div>
+        <div class="wave-wrap">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <div class="hero-content">
+            <div class="badge">✦ Premium Domain For Sale</div>
+            <h1 class="domain-name">
+                <span class="bright">Bright</span><span class="caribbean">Caribbean</span><span class="tld">.com</span>
+            </h1>
+            <p class="tagline">
+                A vivid, memorable domain perfectly suited for travel, resort, lifestyle, or Caribbean-market
+                businesses.
+            </p>
+            <a href="YOUR_GODADDY_LINK_HERE" class="cta-btn">Make an Offer on GoDaddy</a>
+            <p class="price-note">No minimum price · Open to serious offers</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <p class="section-label">Perfect for</p>
+        <h2 class="section-title">What could this domain become?</h2>
+        <div class="use-grid">
+            <div class="use-card">
+                <div class="use-icon">✈️</div>
+                <h3>Travel Agency</h3>
+                <p>Caribbean tours, vacation packages & island getaways.</p>
+            </div>
+            <div class="use-card">
+                <div class="use-icon">🏝️</div>
+                <h3>Resort & Hotel</h3>
+                <p>Luxury beachfront resort or boutique island retreat.</p>
+            </div>
+            <div class="use-card">
+                <div class="use-icon">🌊</div>
+                <h3>Lifestyle Brand</h3>
+                <p>Fashion, wellness, or food brand with a Caribbean spirit.</p>
+            </div>
+            <div class="use-card">
+                <div class="use-icon">🚢</div>
+                <h3>Logistics & Shipping</h3>
+                <p>Freight, cargo or courier services in the Caribbean.</p>
+            </div>
+            <div class="use-card">
+                <div class="use-icon">🎶</div>
+                <h3>Music & Culture</h3>
+                <p>Media platform celebrating Caribbean music and culture.</p>
+            </div>
+            <div class="use-card">
+                <div class="use-icon">🏄</div>
+                <h3>Water Sports</h3>
+                <p>Diving, surfing or adventure sports booking platform.</p>
+            </div>
+        </div>
+        <div class="stats-row">
+            <div class="stat">
+                <div class="stat-num">.com</div>
+                <div class="stat-label">Premium extension</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">2 words</div>
+                <div class="stat-label">Short & brandable</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">Easy</div>
+                <div class="stat-label">Spell & remember</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">Global</div>
+                <div class="stat-label">Market appeal</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <footer class="footer-cta">
+        <h2>Ready to own this domain?</h2>
+        <p>Submit your offer through GoDaddy and secure BrightCaribbean.com before someone else does.</p>
+        <a href="YOUR_GODADDY_LINK_HERE" class="cta-btn">Make an Offer →</a>
+        <p class="godaddy-note">Secured & listed on GoDaddy · Safe transfer guaranteed</p>
+    </footer>
+
+    <script>
+        const dotsContainer = document.getElementById('dots');
+        for (let i = 0; i < 18; i++) {
+            const d = document.createElement('div');
+            d.className = 'dot';
+            const size = Math.random() * 6 + 3;
+            d.style.cssText = `width:${size}px;height:${size}px;left:${Math.random() * 100}%;top:${Math.random() * 100}%;animation-duration:${6 + Math.random() * 8}s;animation-delay:${-Math.random() * 10}s;`;
+            dotsContainer.appendChild(d);
+        }
+    </script>
+
+</body>
+
+</html>
