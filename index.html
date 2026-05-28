@@ -45,7 +45,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 2rem;
+            padding: clamp(1rem, 5vw, 2rem);
             overflow: hidden;
         }
 
@@ -145,7 +145,9 @@
         .hero-content {
             position: relative;
             z-index: 2;
-            max-width: 820px;
+            max-width: 100%;
+            width: 100%;
+            padding: 0 1rem;
         }
 
         .badge {
@@ -153,23 +155,26 @@
             background: rgba(14, 158, 130, 0.18);
             border: 1px solid rgba(28, 196, 160, 0.35);
             color: var(--teal-light);
-            font-size: 12px;
+            font-size: clamp(10px, 2vw, 12px);
             font-weight: 500;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             text-transform: uppercase;
-            padding: 6px 18px;
+            padding: 6px 12px;
             border-radius: 100px;
             margin-bottom: 2rem;
             animation: fadeUp 0.8s ease both;
+            max-width: 90%;
         }
 
         .domain-name {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(3rem, 8vw, 6.5rem);
+            font-size: clamp(1.75rem, 8vw, 6.5rem);
             font-weight: 900;
-            line-height: 1;
+            line-height: 1.1;
             margin-bottom: 0.3em;
             animation: fadeUp 0.9s ease 0.1s both;
+            word-break: break-word;
+            overflow-wrap: break-word;
         }
 
         .domain-name .bright {
@@ -188,10 +193,10 @@
         }
 
         .tagline {
-            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            font-size: clamp(0.95rem, 2.5vw, 1.3rem);
             font-weight: 300;
             color: rgba(255, 255, 255, 0.65);
-            max-width: 520px;
+            max-width: 95%;
             margin: 0 auto 2.5rem;
             line-height: 1.7;
             animation: fadeUp 1s ease 0.2s both;
@@ -202,9 +207,9 @@
             background: linear-gradient(135deg, var(--teal) 0%, var(--teal-light) 100%);
             color: var(--white);
             font-family: 'DM Sans', sans-serif;
-            font-size: 1rem;
+            font-size: clamp(0.9rem, 2vw, 1rem);
             font-weight: 500;
-            padding: 16px 42px;
+            padding: clamp(12px, 3vw, 16px) clamp(24px, 5vw, 42px);
             border-radius: 100px;
             text-decoration: none;
             border: none;
@@ -212,6 +217,10 @@
             letter-spacing: 0.5px;
             transition: transform 0.2s, box-shadow 0.2s;
             animation: fadeUp 1s ease 0.3s both;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 90%;
         }
 
         .cta-btn:hover {
@@ -361,6 +370,65 @@
                 transform: translateY(0);
             }
         }
+
+        @media (max-width: 480px) {
+            .domain-name {
+                font-size: clamp(2rem, 7vw, 2.8rem);
+                margin-bottom: 1rem;
+            }
+
+            .domain-name .tld {
+                font-size: 0.5em;
+            }
+
+            .badge {
+                padding: 5px 10px;
+                margin-bottom: 1.5rem;
+                font-size: 10px;
+                letter-spacing: 0.5px;
+            }
+
+            .hero-content {
+                padding: 0 0.75rem;
+            }
+
+            .section {
+                padding: 4rem 1rem;
+            }
+
+            .section-title {
+                font-size: clamp(1.4rem, 3.5vw, 2rem);
+            }
+
+            .footer-cta h2 {
+                font-size: clamp(1.2rem, 3vw, 1.8rem);
+            }
+
+            .stats-row {
+                padding: 1.5rem;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            }
+
+            .stat-num {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .domain-name {
+                font-size: clamp(1.75rem, 6vw, 2.2rem);
+                letter-spacing: -0.02em;
+            }
+
+            .badge {
+                font-size: 9px;
+                padding: 4px 8px;
+            }
+
+            .hero-content {
+                padding: 0 0.5rem;
+            }
+        }
     </style>
 </head>
 
@@ -383,8 +451,8 @@
                 A vivid, memorable domain perfectly suited for travel, resort, lifestyle, or Caribbean-market
                 businesses.
             </p>
-            <a href="YOUR_GODADDY_LINK_HERE" class="cta-btn">Make an Offer on GoDaddy</a>
-            <p class="price-note">No minimum price · Open to serious offers</p>
+            <a href="https://checkoutlink.godaddy.com/ba722c33-0417-44fe-b22e-54b603234f8b" class="cta-btn">Buy Now on
+                GoDaddy</a>
         </div>
     </section>
 
